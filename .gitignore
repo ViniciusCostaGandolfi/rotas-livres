@@ -1,0 +1,108 @@
+# ==================================
+# 1. GERAL & SISTEMA OPERACIONAL
+# ==================================
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+temp/
+
+# ==================================
+# 2. IDEs (VS Code, IntelliJ, Eclipse)
+# ==================================
+# Ignora configurações locais do usuário, mas mantém recomendações de extensões
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# ==================================
+# 3. VARIÁVEIS DE AMBIENTE (SEGURANÇA!)
+# ==================================
+# Nunca suba senhas ou chaves de API
+.env
+.env.local
+.env.*.local
+
+# ==================================
+# 4. JAVA (SPRING BOOT) - PASTA: gradehorarios-api
+# ==================================
+target/
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Logs de crash da JVM
+hs_err_pid*
+
+# Maven Wrapper (Geralmente comitamos, mas se quiser ignorar o jar, descomente abaixo)
+# .mvn/wrapper/maven-wrapper.jar
+
+# ==================================
+# 5. ANGULAR / NODE - PASTA: gradehorarios-web
+# ==================================
+node_modules/
+dist/
+.angular/
+.sass-cache/
+npm-debug.log
+yarn-error.log
+testem.log
+
+# ==================================
+# 6. PYTHON - PASTA: gradehorarios-worker
+# ==================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Ambientes Virtuais (Virtual Envs)
+env/
+venv/
+.env/
+.venv/
+venv.bak/
+
+# Distribuição
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebooks (caso use para testes)
+.ipynb_checkpoints
+
+# ==================================
+# 7. DOCKER & INFRA
+# ==================================
+docker-compose.override.yml
+.docker/
+
+# ==================================
+# 8. UPLOADS LOCAIS (MINIO/STORAGE)
+# ==================================
+# Ignora pastas onde você salva arquivos de teste localmente
+uploads/
+storage/
+minio-data/
